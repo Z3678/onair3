@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENG ALanoud</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="audio_player.css">
+    <link rel="stylesheet" href="header_nav.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="app.css">
+    
+<!-- GOOGLE fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="audio_player">
+        <main>
+            <header id="header">
+                  
+                <nav>
+                    <img src="logo.jpg" alt="">
+                    <h2 id="siteName"  style=" font-family: 'Harmattan', sans-serif;
+                    font-family: 'Mochiy Pop P One', sans-serif;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-family: 'Neucha', cursive;
+                    font-family: 'Pacifico', cursive;
+                    font-family: 'Rakkas', cursive; "> RADIO live</h2>
+
+                   <p id="radio-title">البث الإذاعي</p>
+                </nav>
+            </header>
+
+ 
+            <article id="player_buttons">
+                <img src="back.png" alt="" id="back">
+                <img src="play.png" alt="" id="play">
+                <img src="next.png" alt="" id="next">
+            </article>
+
+            <article>
+                <audio src="" id="audio_file"></audio>
+                <h2>الصوت</h2>
+                <input id="volume" type="range" value="50" min="0" max="100" id="range">  
+                <h2>السرعة</h2>
+                <input id="speed" type="range" value="100" min="0" max="200" id="range">         
+            </article>
+
+            
+            <article id="colors">
+                    <button id="color-1"></button>
+                    <button id="color-2"></button>
+                   
+           </article>
+           <footer>
+
+            <section id="iphone">
+                <span id="close-iphone"> &times; </span>
+               <img src="logo.jpg"/>
+               <span id="text-iphone">
+                   <p id="app_name-iphone"> RADIO APP</p>
+                   <p id="app_title-iphone"> Free on Iphone Story </p>
+               </span>
+               <button id="app_downlaod-iphone">Open - فتح</button>
+            </section>
+           </footer>
+
+        </main>
+    </div>
+
+
+    
+    <script src="resize.js"></script>
+    <script src="volume.js"></script>
+    <script src="speedVolume.js"></script>
+    <script src="colors.js"></script>
+    <script src="player_buttons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
